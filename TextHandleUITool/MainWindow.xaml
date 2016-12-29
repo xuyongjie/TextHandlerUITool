@@ -34,8 +34,8 @@
             <TextBlock Name="SelectedFileNameTextBlock" VerticalAlignment="Center"/>
         </StackPanel>
         <Button Name="SaveButton" Grid.Row="1" Grid.Column="2" Content="Sava" Click="SaveButton_Click"/>
-        <TextBox Name="ResourceTextBox" Grid.Row="2" Grid.Column="0"/>
-        <Button Name="GenerateButton" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Content="Generate >>" Height="30" Click="GenerateButton_Click"/>
-        <TextBox Name="ResultTextBox" Grid.Row="2" Grid.Column="2"/>
+        <TextBox Name="ResourceTextBox" AcceptsReturn="True" TextWrapping="Wrap"  Grid.Row="2" Grid.Column="0"/>
+        <Button Name="GenerateButton"  Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Content="Generate >>" Height="30" Click="GenerateButton_Click"/>
+        <TextBox Name="ResultTextBox" AcceptsReturn="True" TextWrapping="Wrap" Grid.Row="2" Grid.Column="2"/>
     </Grid>
 </Window>

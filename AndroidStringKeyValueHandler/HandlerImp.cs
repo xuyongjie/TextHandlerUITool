@@ -28,7 +28,9 @@ namespace AndroidStringKeyValueHandler
             var array = resource.Split(new char[] { '\n' });
             foreach(var item in array)
             {
-                var subArr = item.Split(new char[] { '\t','\r' });
+                string temp = item.Trim();
+                temp = new System.Text.RegularExpressions.Regex("[\\s]+").Replace(temp, " ");
+                var subArr = temp.Split(new char[] { '\t','\r',' ',',',':'});
                 if (subArr != null && subArr.Length > 1)
                 {
                     builder.Append($"<string name=\"{subArr[0]}\">{subArr[1]}</string>\n");
