@@ -26,7 +26,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -145,6 +145,10 @@
     <ProjectReference Include="..\AndroidStringKeyValueHandler\AndroidStringKeyValueHandler.csproj">
       <Project>{3f720412-6f1e-433e-bbda-59aac4b18f1e}</Project>
       <Name>AndroidStringKeyValueHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoTranslateChineseToEnglishAndToJavaCode\AutoTranslateChineseToEnglishAndToJavaCode.csproj">
+      <Project>{8eb1cbee-29bf-4e41-98cf-4184140b1c6d}</Project>
+      <Name>AutoTranslateChineseToEnglishAndToJavaCode</Name>
     </ProjectReference>
     <ProjectReference Include="..\ITextHandle\ITextHandle.csproj">
       <Project>{7ccf33c5-675f-4dbb-aaf3-0c0f66a516d2}</Project>
