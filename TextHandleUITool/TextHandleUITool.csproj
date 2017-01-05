@@ -154,6 +154,10 @@
       <Project>{7ccf33c5-675f-4dbb-aaf3-0c0f66a516d2}</Project>
       <Name>ITextHandle</Name>
     </ProjectReference>
+    <ProjectReference Include="..\JustTranslation\JustTranslation.csproj">
+      <Project>{d6c0f7e1-d3e3-4d4f-b32e-0738dd3e3034}</Project>
+      <Name>JustTranslation</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

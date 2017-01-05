@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidStringKeyValueHandle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoTranslateChineseToEnglishAndToJavaCode", "AutoTranslateChineseToEnglishAndToJavaCode\AutoTranslateChineseToEnglishAndToJavaCode.csproj", "{8EB1CBEE-29BF-4E41-98CF-4184140B1C6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustTranslation", "JustTranslation\JustTranslation.csproj", "{D6C0F7E1-D3E3-4D4F-B32E-0738DD3E3034}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8EB1CBEE-29BF-4E41-98CF-4184140B1C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EB1CBEE-29BF-4E41-98CF-4184140B1C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EB1CBEE-29BF-4E41-98CF-4184140B1C6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C0F7E1-D3E3-4D4F-B32E-0738DD3E3034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C0F7E1-D3E3-4D4F-B32E-0738DD3E3034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C0F7E1-D3E3-4D4F-B32E-0738DD3E3034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C0F7E1-D3E3-4D4F-B32E-0738DD3E3034}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

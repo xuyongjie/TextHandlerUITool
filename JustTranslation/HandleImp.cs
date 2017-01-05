@@ -9,7 +9,7 @@ namespace JustTranslation
 {
     public class HandleImp : IHandler
     {
-        public const string NAME = "Auto translate chinese to english and then to java code";
+        public const string NAME = "Auto Translate by YOUDAO";
         public string Name
         {
             get
@@ -30,7 +30,7 @@ namespace JustTranslation
             foreach(var item in array)
             {
                 string translation = translator.Translate(item);
-                builder.Append("UniversalApp.getInstance().getString(R.string.").Append(translation.ToLower()).Append(")\n");
+                builder.Append(translation).Append("\n");
             }
             return builder.ToString();
         }

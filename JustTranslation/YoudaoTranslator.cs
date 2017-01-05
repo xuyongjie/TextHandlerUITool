@@ -54,14 +54,12 @@ namespace JustTranslation
         {
             if(ErrorCode==0&&Translation!=null&&Translation.Count>0)
             {
-                string item = Translation[0];
-                item = item.TrimStart(new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' });
-                item = item.Trim();
-                item = item.Substring(0, item.Length > 30 ? 30 : item.Length);
-                item = item.Replace(',', '_');
-                item = item.Replace(' ', '_');
-                item = item.Replace('-', '_');
-                return item;
+                StringBuilder builder = new StringBuilder();
+                foreach(var trans in Translation)
+                {
+                    builder.Append(trans).Append(" ");
+                }
+                return builder.ToString();
             }
             else
             {
