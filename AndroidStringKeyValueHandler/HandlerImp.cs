@@ -20,20 +20,28 @@ namespace AndroidStringKeyValueHandler
 
         public string Handle(string resource)
         {
-            if(string.IsNullOrEmpty(resource))
+            if (string.IsNullOrEmpty(resource))
             {
                 return string.Empty;
             }
             StringBuilder builder = new StringBuilder();
             var array = resource.Split(new char[] { '\n' });
-            foreach(var item in array)
+            foreach (var item in array)
             {
                 string temp = item.Trim();
                 temp = new System.Text.RegularExpressions.Regex("[\\s]+").Replace(temp, " ");
-                var subArr = temp.Split(new char[] { '\t','\r',' ',',',':'});
-                if (subArr != null && subArr.Length > 1)
+                int splitIndex = -1;
+                for (int i = 0; i < temp.Length; i++)
                 {
-                    builder.Append($"<string name=\"{subArr[0]}\">{subArr[1]}</string>\n");
+                    if (temp[i] == ' ')
+                    {
+                        splitIndex = i;
+                        break;
+                    }
+                }
+                if (splitIndex != -1)
+                {
+                    builder.Append($"<string name=\"{temp.Substring(0, splitIndex).Trim()}\">{temp.Substring(splitIndex).Trim()}</string>\n");
                 }
             }
             return builder.ToString();

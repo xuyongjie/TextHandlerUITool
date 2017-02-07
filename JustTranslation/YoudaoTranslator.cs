@@ -55,9 +55,15 @@ namespace JustTranslation
             if(ErrorCode==0&&Translation!=null&&Translation.Count>0)
             {
                 StringBuilder builder = new StringBuilder();
+                int index = 0;
                 foreach(var trans in Translation)
                 {
-                    builder.Append(trans).Append(" ");
+                    if(index>0)
+                    {
+                        builder.Append(" ");
+                    }
+                    builder.Append(trans);
+                    index++;
                 }
                 return builder.ToString();
             }
